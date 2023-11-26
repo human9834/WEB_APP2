@@ -17,12 +17,6 @@ def index(): # トップページを開いたら以下のhtmlページが表示�
         'index.html',
         books=books
     )
-        # {'title': 'ねこえもん図鑑',
-        #  'price': 1500,
-        #  'arrival_day': '2023年11月14'},
-        # {'title': 'ねこえもん進化論',
-        #  'price': 1300,
-        #  'arrival_day': '2023年11月11'},
 
 @app.route('/form') # form表示
 def form(): # formを表示させる関数
@@ -42,5 +36,3 @@ def register():
     con.commit()
     con.close()
     return redirect(url_for('index'))
-
-# 37:30

@@ -6,4 +6,3 @@ import flasko.main
 from flasko import db
 db.create_books_table()
 
-# 31:45から
